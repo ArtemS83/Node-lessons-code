@@ -1,0 +1,5 @@
+INSERT INTO genders
+(id, name, created_at, updated_at)
+VALUES (1, 'male', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP), 
+(2, 'female', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP), 
+(3, 'none', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
