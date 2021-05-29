@@ -1,4 +1,4 @@
-# Node-lessons-code
+# Node-lessons-code!
 
 # npm пакеты
 
@@ -42,7 +42,7 @@ npx eslint --init
 
 ```shell
 # Babel
-npm i @babel/core @babel/eslint-parser @babel/plugin-proposal-class-properties 
+npm i @babel/core @babel/eslint-parser @babel/plugin-proposal-class-properties
 @babel/plugin-proposal-private-methods @babel/plugin-syntax-top-level-await -D
 
 - создаем файл babel.config.json
