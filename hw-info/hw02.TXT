@@ -1,9 +1,12 @@
 при валидации контактов, которые приходят на обновление, необходимо, что бы точно пришло хотя бы одно поле на обновление
+
+```js
 const schemaUpdate = Joi.object({
   name: Joi.string()    
   email: Joi.string()
   phone: Joi.string()
-}).min(1) - надо дописыать - .min(1) - что минимально прийдет хотя бы одно поле на обновление
+}).min(1) // - надо дописыать - .min(1) - что минимально прийдет хотя бы одно поле на обновление
+```
 
 ----------------------------------------------------------------------
 если надо .env или node_module добавить в .gitignore.
@@ -12,6 +15,10 @@ const schemaUpdate = Joi.object({
 Что делать
 Use git rm:
 If you have already added the files to be tracked, you need to remove them from tracking:
+
+```js
 git rm .env --cached
 git commit -m "Stopped tracking .env File"
+```
+
 аналогично с нод_модулям

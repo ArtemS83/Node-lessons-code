@@ -18,10 +18,14 @@ Model.findByIdAndUpdate()
 по этому тут можно сразу передавать значение по которому происходит поиск - в этом примере мы его передаем в переменной - id
 НО даже когда используются функции в названии которых уже явно указывается слово ById , по которому идет поиск в БД, все равно используется синтаксис, как будуд-то вызыватеся функция с записью -  One 
 В двух ДЗ видела вот такую запись  -
+
+```js
  const result = await Contact.findByIdAndUpdate({ _id: contactId },
     { ...body },
     { new: true },
   )
+```
+
  Вот ссылка на официальную документацию, где показывается, как передаются аргументы - https://mongoosejs.com/docs/api/model.html#model_Model.findByIdAndUpdate
 если вы используете findByIdAndUpdate достаточно сразу передавать id , не надо конкретизировать какое поле вы передаете - { _id: id } - findByIdAndUpdate( id, ...body, { new: true } )
 или если вы хотите явно указывать поле, по которому вы обращаетесь с БД, то можно использовать findOneAndUpdate( { _id: id }, ...body, { new: true }) - и тут надо явно указывать по какому полю мы ищем элемент.
@@ -36,4 +40,7 @@ __________________________________
 или можете через монгус
 Build In Solution > Mongoose 5.7.12
 If you are using Mongoose, we can test whether a String is of 12 bytes or a string of 24 hex characters by using mongoose build-in isValidObjectId.
+
+```js
 mongoose.isValidObjectId(string); /* will return true/false */
+```
